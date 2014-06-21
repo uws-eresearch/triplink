@@ -49,7 +49,6 @@ class Triplink(object):
         self.__loadTemplate()
         
     def __loadTemplate(self):
-        #Load template with 
         if self.__rendering_template_path <> None:
             f = open(self.__rendering_template_path, "rb")
             self.triplink_template = json.loads(f.read())
@@ -58,9 +57,6 @@ class Triplink(object):
             self.triplink_template = { "default":  {
                                         "statement": "Subject: $subject Predicate: $predicate Object: $object)",
                                         "urltitle": "Predicate: $predicate Object: $object)",
-                                        "readableMetadata": ["$predicate", "$text ($object)"],
-                                        "dc_metadata": ["relation", "$predicate::$object'$text"],
-                                        "dc": "<dc:relation>$predicate::$object'$text</dc:relation>",
                                         "RDFaTemplate": "<span rel='$predicate' resource='$object'>$text</span>"
                                         }
                                     }        
