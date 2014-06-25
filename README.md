@@ -6,7 +6,9 @@ This is a set of (Alpha quality) tools for encoding RDF triples in URLs.
 
 Eg:  
 
-```http://ontologize.me/?tl_p=http://purl.org/dc/terms/creator&triplink=http://purl.org/triplink/v/0.1&tl_o=http://orcid.org/0000-0002-3545-944X```
+```
+http://ontologize.me/?tl_p=http://purl.org/dc/terms/creator&triplink=http://purl.org/triplink/v/0.1&tl_o=http://orcid.org/0000-0002-3545-944X
+```
 
 
 For some simple examples see [Ontologize.me][ont].

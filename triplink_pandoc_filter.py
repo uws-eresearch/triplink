@@ -11,7 +11,7 @@ def links(key, value, format, meta):
   if key == 'Link':
     show = value[0]
     url = value[1][0]
-    tl = triplink.Triplink(url, rendering_template_path="./triplink_template.json")
+    tl = triplink.Triplink(url)
     if tl.isValid:
         #TODO: Construct this more nicelier
         newval = {"t": "Span","c":[["",[],[["about", tl.subject],
