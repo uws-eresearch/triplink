@@ -57,7 +57,7 @@ class Triplink(object):
             self.triplink_template = { "default":  {
                                         "statement": "Subject: $subject Predicate: $predicate Object: $object)",
                                         "urltitle": "Predicate: $predicate Object: $object)",
-                                        "RDFaTemplate": "<span rel='$predicate' resource='$object'>$text</span>"
+                                        "RDFaTemplate": "<span rel='$predicate' resource='$object' about='$subject'>$text</span>"
                                         }
                                     }        
  
