@@ -27,7 +27,7 @@ This produces RDFa markup asserting authorship:
 
 ```
 
-Which RDFaplay.info interprets thus:
+Which [RDFa Play][rdfa] interprets thus:
 
 ```
 @prefix dc: <http://purl.org/dc/terms/> .
@@ -36,8 +36,7 @@ Which RDFaplay.info interprets thus:
    dc:creator <http://orcid.org/0000-0002-3545-944X> .
 ```
 
-
-
+[rdfa]: http://rdfa.info/play
 [ont]: http://ontologize.me
 [pandoc]: http://johnmacfarlane.net/pandoc
 [ptauth]:  http://ontologize.me/?tl_p=http://purl.org/dc/terms/creator&triplink=http://purl.org/triplink/v/0.1&tl_o=http://orcid.org/0000-0002-3545-944X
